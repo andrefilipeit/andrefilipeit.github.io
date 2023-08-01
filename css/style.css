@@ -151,6 +151,7 @@
   width: 150px;
   text-align: center;
   display: flex;
+  border: 1px solid var(--main-color);
 }
 
 #btn-projects  ion-icon,
@@ -198,4 +199,62 @@
 .skills-box i {
   font-size: 40px;
   margin: 0 10px;
+}
+
+/* Responsive - Mobile */
+
+/* Css media query */
+@media(max-width: 450px) {
+  #container {
+    flex-direction: column;
+  }
+
+  #bio-container {
+    min-height: auto;
+    border-right: none;
+    border-bottom: 5px solid var(--bio-border-color);
+  }
+
+  #bio-container h1 {
+    display:none;
+  }
+
+  #bio-container p {
+    margin: 10px auto;
+    max-width: 60%;
+    font-size: 18px;
+  }
+
+  #about-container {
+    text-align: center;
+    padding: 30px;
+  }
+
+  #about-container #name {
+    font-size: 28px;
+  }
+
+  #about-container .description {
+    margin: 10px auto;
+    max-width: 100%;
+    line-height: 26px;
+  }
+
+  #about-container .description-two {
+    margin: 10px auto;
+    max-width: 100%;
+    line-height: 26px;
+  }
+  
+  #btn-projects {
+    margin: 20px auto;
+  }
+
+  .skills-box {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
 }
